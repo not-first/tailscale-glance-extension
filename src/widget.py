@@ -30,7 +30,7 @@ def parse_widget_html(data, display_options=None):
 
         .device-info {
             display: flex;
-            transition: transform 0.3s ease, opacity 0.3s ease;
+            transition: transform 0.2s ease, opacity 0.2s ease;
         }
 
         .device-ip {
@@ -39,7 +39,7 @@ def parse_widget_html(data, display_options=None):
             left: 0;
             transform: translateY(-100%);
             opacity: 0;
-            transition: transform 0.3s ease, opacity 0.3s ease;
+            transition: transform 0.2s ease, opacity 0.2s ease;
         }
 
         .device-info-container:hover .device-info {
