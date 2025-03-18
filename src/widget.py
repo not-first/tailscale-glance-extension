@@ -1,4 +1,3 @@
-from src.config import config
 from datetime import datetime, timezone
 import humanize
 

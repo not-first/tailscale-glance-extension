@@ -34,6 +34,17 @@ Next, add the extension widget into your glance page by adding this to your `gla
   cache: 10m
   allow-potentially-dangerous-html: true
 ```
+#### Parameters (all optional)
+```yml
+parameters:
+  show-updates: true
+  show-user: true
+```
+
+`show-updates`: If available Tailscale updates for each device should be indicated.
+
+`show-user`: If each device's user should be shown below its name, next to its OS.
+
 
 ---
 
