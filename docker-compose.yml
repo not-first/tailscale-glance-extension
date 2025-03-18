@@ -1,0 +1,15 @@
+services:
+  glance:
+    image: glanceapp/glance
+    # ...
+
+  tailscale-extension:
+    image: ghcr.io/not-first/tailscale-glance-extension
+    ports:
+      - "8677:8677"
+    restart: unless-stopped
+    env_file: .env
+    labels:
+      glance.hide: false
+      glance.name: Tailscale Extension
+      glance.parent: glance
