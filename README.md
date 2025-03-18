@@ -3,6 +3,8 @@ _An extension widget API for the [Glance](https://github.com/glanceapp/glance) d
 
 A widget that displays the devices on your [Tailscale](https://tailscale.com/) tailnet, as well as their online status and availability of updates.
 
+This is another, more simple, visual option to the wonderful extension [glance.tailscale](https://github.com/fifty-six/glance.tailscale) by [fifty-six](https://github.com/fifty-six) for which this extension took massive inspiration from.
+
 ## Setup
 ### Docker Compose
 Add the following to your existing glance docker compose
