@@ -5,11 +5,13 @@ def parse_widget_html(data, display_options=None):
     if display_options is None:
         display_options = {
             "show_updates": True,
-            "show_user": True
+            "show_user": True,
+            "collapse_after": 4
         }
 
     show_updates = display_options.get("show_updates", True)
     show_user = display_options.get("show_user", True)
+    collapse_after = display_options.get("collapse_after", 4)
 
     if "error" in data:
         return f"<p class='color-negative'>Error: {data['error']}</p>"
@@ -164,7 +166,7 @@ def parse_widget_html(data, display_options=None):
 
     return f"""
     {css}
-    <ul class="list list-gap-10 collapsible-container" data-collapse-after="4">
+    <ul class="list list-gap-10 collapsible-container" data-collapse-after="{collapse_after}">
         {devices_html}
     </ul>
     """

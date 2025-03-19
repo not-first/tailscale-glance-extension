@@ -15,9 +15,10 @@ app = FastAPI()
 async def get_tailscale_devices(
     request: Request,
     show_updates: bool = Query(True, alias="show-updates"),
-    show_user: bool = Query(True, alias="show-user")
+    show_user: bool = Query(True, alias="show-user"),
+    collapse_after: int = Query(4, alias="collapse-after")
 ):
-    logger.info(f"Request received for Tailscale devices (show-updates: {show_updates}, show-user: {show_user})")
+    logger.info(f"Request received for Tailscale devices (show-updates: {show_updates}, show-user: {show_user}, collapse-after: {collapse_after})")
 
     if not config.TAILSCALE_API_KEY:
         error_msg = "TAILSCALE_API_KEY not configured"
@@ -36,7 +37,8 @@ async def get_tailscale_devices(
 
     display_options = {
         "show_updates": show_updates,
-        "show_user": show_user
+        "show_user": show_user,
+        "collapse_after": collapse_after
     }
 
     return HTMLResponse(
