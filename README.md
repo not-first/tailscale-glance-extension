@@ -1,7 +1,7 @@
 # Tailscale Glance Extension
 _An extension widget API for the [Glance](https://github.com/glanceapp/glance) dashboard._
 
-![Widget screenshot](https://github.com/user-attachments/assets/3bc1d9f0-e51d-4bde-b8b9-fe74f3c08072)
+![Widget usage example](https://github.com/user-attachments/assets/911ec731-765b-479d-86b1-fdddd8df1bf3)
 
 A widget that displays the devices on your [Tailscale](https://tailscale.com/) tailnet, as well as their connected status, availability of updates.
 
