@@ -1,9 +1,11 @@
 # Tailscale Glance Extension
 _An extension widget API for the [Glance](https://github.com/glanceapp/glance) dashboard._
 
-A widget that displays the devices on your [Tailscale](https://tailscale.com/) tailnet, as well as their online status and availability of updates.
+![Widget screenshot](https://github.com/user-attachments/assets/3bc1d9f0-e51d-4bde-b8b9-fe74f3c08072)
 
-This is another, more simple, visual option to the wonderful extension [glance.tailscale](https://github.com/fifty-six/glance.tailscale) by [fifty-six](https://github.com/fifty-six) for which this extension took massive inspiration from.
+A widget that displays the devices on your [Tailscale](https://tailscale.com/) tailnet, as well as their connected status, availability of updates.
+
+This is another, more simple, visual option to the wonderful extension [glance.tailscale](https://github.com/fifty-six/glance.tailscale) by [fifty-six](https://github.com/fifty-six).
 
 ## Setup
 ### Docker Compose
@@ -39,16 +41,13 @@ Next, add the extension widget into your glance page by adding this to your `gla
 #### Parameters (all optional)
 ```yml
 parameters:
-  show-updates: true
-  show-user: true
-  collapse-after: 2
+  show-updates: false
+  show-user: false
 ```
 
 `show-updates`: If available Tailscale updates for each device should be indicated. Defaults to true
 
 `show-user`: If each device's user should be shown below its name, next to its OS. Defaults to true
-
-`collapse-after`: Determine
 
 
 ---
