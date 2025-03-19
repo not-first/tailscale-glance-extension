@@ -39,13 +39,13 @@ Next, add the extension widget into your glance page by adding this to your `gla
 #### Parameters (all optional)
 ```yml
 parameters:
-  show-updates: true
-  show-user: true
+  show-updates: false
+  show-user: false
 ```
 
-`show-updates`: If available Tailscale updates for each device should be indicated.
+`show-updates`: If available Tailscale updates for each device should be indicated. Defaults to true
 
-`show-user`: If each device's user should be shown below its name, next to its OS.
+`show-user`: If each device's user should be shown below its name, next to its OS. Defaults to true
 
 
 ---
